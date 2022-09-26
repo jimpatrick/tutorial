@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
+import 'package:tutorial/01_image_picker/screens/image_picker.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
-void main() {
+Future<void> main() async {
   runApp(const MyApp());
 }
 
@@ -26,45 +27,15 @@ class MyApp extends StatelessWidget {
             Locale('ar', 'AE'),
             Locale('en', 'EN')
           ],
-          locale: const Locale("fa", "IR"),
+          locale: const Locale("en", "EN"),
           title: 'Flutter Tutorial',
           theme: ThemeData(
             fontFamily: 'YekanBakhFaNumRegular',
             primarySwatch: Colors.blue,
           ),
-          home: const MyHomePage(),
+          home: const ImagePickerApp(),
         );
       },
-    );
-  }
-}
-
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: const Text("Add Topic Here"),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text(
-              'Center Content',
-            ),
-          ],
-        ),
-      ),
     );
   }
 }
