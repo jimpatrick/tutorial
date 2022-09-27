@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:sizer/sizer.dart';
-import 'package:tutorial/01_image_picker/screens/source_code.dart';
+import 'package:tutorial/image_picker/screens/source_code.dart';
 import 'package:tutorial/widgets/buttons/elevated_button.dart';
 import 'package:tutorial/widgets/space.dart';
 import 'package:flutter_svg/flutter_svg.dart';

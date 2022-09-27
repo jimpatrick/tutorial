@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
-import 'package:tutorial/01_image_picker/screens/image_picker.dart';
+import 'package:tutorial/image_picker/screens/image_picker.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
 Future<void> main() async {
